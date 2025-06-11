@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Profile Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Fake Profile Detection</h1>
+            <p>Analyze social media profiles using AI models (BERT, CNN, LSTM, GNN)</p>
+        </header>
+
+        <main>
+            <form id="profile-form" class="card" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Profile Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Enter profile bio or posts..." rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="profile-pic">Upload Profile Picture:</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+
+                <button type="submit">Analyze Profile</button>
+            </form>
+
+            <section id="result-section" class="card" style="display:none;">
+                <h2>Prediction Result</h2>
+                <p id="prediction-output">Processing...</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Fake Profile Detector</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
