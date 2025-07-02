@@ -51,7 +51,8 @@ input[type="text"],
 textarea,
 input[type="file"] {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0 10px;
+    /* padding-left: 10px; */
     border: 1px solid #d1d5db;
     border-radius: 8px;
     font-size: 16px;
